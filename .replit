@@ -1,5 +1,5 @@
 modules = ["python-base-3.13"]
-run = "python3 Prendergast_HW6_Introduction/introduction.py"
+run = "python3 Prendergast_HW7_PyGame/prendergast_hw7.py"
 [nix]
 channel = "stable-24_05"
 
