@@ -32,51 +32,62 @@ while running:
   #clear screen
   screen.fill((128, 128, 128))
 
-  #draw rectangle
+  #draw starting area
   pygame.draw.rect(
     screen, 
     "blue", 
     pygame.Rect((0,375), (800,25))
   )
   
+  #draw middle safe zone
   pygame.draw.rect(
     screen,
     "yellow",
     pygame.Rect((0,175), (800,25))
   )
+  
 
+  #draw end zone
   pygame.draw.rect(
     screen, 
     "green",
     pygame.Rect((0,0), (800,25))
   )
-
+  
+  #draw lane
   pygame.draw.rect(
     screen, 
     "white",
     pygame.Rect((0,275), (800,25))
   )
-
+  
+  #draw car
+  pygame.draw.rect(
+    screen, 
+    "blue",
+    pygame.Rect((0,320), (40,40))
+  )
+  
+  #draw lane
   pygame.draw.rect(
     screen,
     "white",
     pygame.Rect((0,85), (800,25))
   )
 
-  #Draw Circle
+  #Draw frog
   pygame.draw.circle(
     screen, 
-    "green", 
-    (100,200), 
-    40)
-
-  #Draw a Line
-  pygame.draw.line(
-    screen, 
     "red", 
-    (100,100), 
-    (200,200), 
-    5)
+    (300,390), 
+    10)
+
+  #draw car
+  pygame.draw.rect(
+    screen, 
+    "red",
+    pygame.Rect((560,220), (40,40))
+  )
 
 
   #update screen
