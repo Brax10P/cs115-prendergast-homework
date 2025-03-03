@@ -1,3 +1,11 @@
+"""
+Braxton Prendergast
+3/3/2025
+HW7
+Frogger
+"""
+
+
 import pygame
 
 #init pygame
@@ -32,63 +40,68 @@ while running:
   #clear screen
   screen.fill((128, 128, 128))
 
-  #draw starting area
+  #draw safe areas
   pygame.draw.rect(
     screen, 
     "blue", 
     pygame.Rect((0,375), (800,25))
   )
-  
-  #draw middle safe zone
+
   pygame.draw.rect(
     screen,
     "yellow",
     pygame.Rect((0,175), (800,25))
   )
-  
 
-  #draw end zone
   pygame.draw.rect(
     screen, 
     "green",
     pygame.Rect((0,0), (800,25))
   )
   
-  #draw lane
+  #draw lanes
   pygame.draw.rect(
     screen, 
     "white",
     pygame.Rect((0,275), (800,25))
   )
-  
-  #draw car
-  pygame.draw.rect(
-    screen, 
-    "blue",
-    pygame.Rect((0,320), (40,40))
-  )
-  
-  #draw lane
+
   pygame.draw.rect(
     screen,
     "white",
     pygame.Rect((0,85), (800,25))
   )
 
-  #Draw frog
+  #draw frog
   pygame.draw.circle(
     screen, 
     "red", 
     (300,390), 
     10)
 
-  #draw car
+  #draw cars
+  pygame.draw.circle(
+    screen, 
+    "purple",
+    (575,240), 25)
+
   pygame.draw.rect(
     screen, 
-    "red",
-    pygame.Rect((560,220), (40,40))
+    "orange",
+    pygame.Rect((0,125), (80,40))
   )
 
+  pygame.draw.ellipse(
+    screen,
+    "pink",
+    pygame.Rect((520, 35), (80,40))
+  )
+
+  pygame.draw.rect(
+    screen, 
+    "blue",
+    pygame.Rect((0,320), (40,40))
+  )
 
   #update screen
   pygame.display.flip()
