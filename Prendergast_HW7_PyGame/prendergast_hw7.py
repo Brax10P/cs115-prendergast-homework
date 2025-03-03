@@ -36,7 +36,32 @@ while running:
   pygame.draw.rect(
     screen, 
     "blue", 
-    pygame.Rect((0,375), (800,25)))
+    pygame.Rect((0,375), (800,25))
+  )
+  
+  pygame.draw.rect(
+    screen,
+    "yellow",
+    pygame.Rect((0,175), (800,25))
+  )
+
+  pygame.draw.rect(
+    screen, 
+    "green",
+    pygame.Rect((0,0), (800,25))
+  )
+
+  pygame.draw.rect(
+    screen, 
+    "white",
+    pygame.Rect((0,275), (800,25))
+  )
+
+  pygame.draw.rect(
+    screen,
+    "white",
+    pygame.Rect((0,85), (800,25))
+  )
 
   #Draw Circle
   pygame.draw.circle(
