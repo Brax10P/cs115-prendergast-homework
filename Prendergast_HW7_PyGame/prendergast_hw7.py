@@ -149,6 +149,10 @@ while running:
         car1_pos[0] = 0
     if car2_pos[0] <= 0:
         car2_pos[0] = 600
+    if car3_pos[0] >= 600:
+        car3_pos[0] = 0
+    if car4_pos[0] <= 0:
+        car4_pos[0] = 600
     #update screen
     pygame.display.flip()
 
